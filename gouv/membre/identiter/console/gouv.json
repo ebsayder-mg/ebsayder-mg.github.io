@@ -1,35 +1,23 @@
 {
   "commands": [
-     
-
-          {
-      "command": " ?gouv-A-loriana",
+    {
+      "command": "?gouv-A-loriana",
       "prefix": "🏛️",
-      "response": "   Assistante du gouvernement ",
+      "response": "Assistante du gouvernement",
       "color": "#1ee38d"
     },
-
-          {
-      "command": " ?gouv-S-nathan ",
+    {
+      "command": "?gouv-S-nathan",
       "prefix": "🏛️",
-      "response": " Maire MGI ",
+      "response": "Maire MGI",
       "color": "#1ee38d"
     },
-
-
-
-    
-
-        {
-      "command": " ?gouv-A-john ",
+    {
+      "command": "?gouv-A-john",
       "prefix": "🏛️",
-      "response": " President   ",
+      "response": "President",
       "color": "#1ee38d"
     },
-
-
-    
-    
     {
       "command": "/gouv",
       "prefix": "🏛️",
