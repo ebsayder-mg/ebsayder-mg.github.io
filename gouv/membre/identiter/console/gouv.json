@@ -1,0 +1,46 @@
+{
+  "commands": [
+     {
+      "command": " ?gouv-A-john ",
+      "prefix": "🏛️",
+      "response": " Tout type d'armes autoriser. ",
+      "color": "#ff0"
+    },
+
+
+          {
+      "command": " ?gouv-A-loriana",
+      "prefix": "🏛️",
+      "response": "   Assistante du gouvernement ",
+      "color": "#ff0"
+    },
+
+          {
+      "command": " ?gouv-S-nathan ",
+      "prefix": "🏛️",
+      "response": " Maire MGI ",
+      "color": "#1ee38d"
+    },
+
+
+
+    
+
+        {
+      "command": " ?gouv-A-john ",
+      "prefix": "🏛️",
+      "response": " President   ",
+      "color": "#1ee38d"
+    },
+
+
+    
+    
+    {
+      "command": "/gouv",
+      "prefix": "!",
+      "response": "?build-N-prenom",
+      "color": "#f00"
+    }
+  ]
+}
