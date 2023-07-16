@@ -1,9 +1,9 @@
 {
   "commands": [
     {
-      "command": "/DPT.cverif",
+      "command": "/id",
       "prefix": "*",
-      "response": "N-028 / attaisbe",
+      "response": "?id-N-gouv",
       "color": "#ff0"
     },
     {
