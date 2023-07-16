@@ -1,1 +1,16 @@
-
+{
+  "commands": [
+    {
+      "command": "/DPT.cverif",
+      "prefix": "*",
+      "response": "N-028 / attaisbe",
+      "color": "#ff0"
+    },
+    {
+      "command": "/commande2",
+      "prefix": "!",
+      "response": "Réponse de la commande 2",
+      "color": "#f00"
+    }
+  ]
+}
