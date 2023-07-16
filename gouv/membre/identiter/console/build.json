@@ -3,25 +3,25 @@
     {
       "command": "/build",
       "prefix": "🏗️",
-      "response": " ?build-N-prenom ",
+      "response": "?build-N-prenom",
       "color": "#ff0"
     },
     {
-      "command": " ?build-C-mike ",
+      "command": "?build-C-mike",
       "prefix": "🏗️",
-      "response": " valide en full   ",
+      "response": "valide en full",
       "color": "#ff0"
     },
     {
-      "command": " ?build-C-mike ",
+      "command": "?build-C-mike",
       "prefix": "🏗️",
-      "response": " valide en full   ",
+      "response": "valide en full",
       "color": "#ff0"
     },
     {
-      "command": " ?build-A-john ",
+      "command": "?build-A-john",
       "prefix": "🏗️",
-      "response": " valide en 1  ",
+      "response": "valide en 1",
       "color": "#ff0"
     },
     {
