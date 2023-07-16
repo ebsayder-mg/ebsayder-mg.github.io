@@ -1,7 +1,7 @@
 {
   "commands": [
     {
-      "command": "/gouv",
+      "command": "/build",
       "prefix": "🏗️",
       "response": " liste des permis  ( ?build-N-prenom )",
       "color": "#ff0"
