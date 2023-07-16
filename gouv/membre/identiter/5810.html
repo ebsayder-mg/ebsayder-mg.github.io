@@ -33,18 +33,15 @@
     document.addEventListener('DOMContentLoaded', function() {
       const terminal = document.getElementById('terminal');
       const input = document.getElementById('input');
-
+      
       // Charger les commandes à partir d'un fichier JSON externe
       function loadCommands(file, callback) {
-        const xhr = new XMLHttpRequest();
-        xhr.overrideMimeType('application/json');
-        xhr.open('GET', `console/${file}`, true);
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            callback(JSON.parse(xhr.responseText));
-          }
-        };
-        xhr.send(null);
+        fetch(`console/${file}`)
+          .then(response => response.json())
+          .then(callback)
+          .catch(error => {
+            console.error(`Erreur lors du chargement du fichier ${file}:`, error);
+          });
       }
 
       // Fonction pour afficher les réponses
