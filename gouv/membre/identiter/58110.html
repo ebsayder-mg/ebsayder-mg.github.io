@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: monospace;
+      padding: 20px;
+    }
+    
+    #terminal {
+      width: 100%;
+      height: 300px;
+      overflow: auto;
+      border: 1px solid #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    #input {
+      color: #0f0;
+      width: 100%;
+      border: 1px solid #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .command {
+      margin-bottom: 10px;
+    }
+    
+    .command > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .command > div > span {
+      font-weight: bold;
+    }
+    
+    .command > div > span:first-child {
+      color: #888;
+    }
+    
+    .command > div > span:last-child {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <input id="input" type="text" placeholder="Entrez une commande">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const terminal = document.getElementById('terminal');
+      const input = document.getElementById('input');
+      let commandsData = null;
+      
+      // Charger les commandes à partir d'un fichier JSON externe
+      function loadCommands(file, callback) {
+        fetch(`console/${file}`)
+          .then(response => response.json())
+          .then(callback)
+          .catch(error => {
+            console.error(`Erreur lors du chargement du fichier <span class="math-inline">\{file\}\:\`, error\);
+\}\);
+\}
+// Fonction pour afficher les réponses
+function displayResponse\(response, color\) \{
+const div \= document\.createElement\(\'div\'\);
+div\.style\.color \= color;
+div\.textContent \= response;
+terminal\.appendChild\(div\);
+\}
+// Fonction pour traiter les commandes
+function processCommand\(command\) \{
+const parsedCommand \= command\.trim\(\);
+const matchedCommand \= commandsData\.commands\.find\(c \=\> c\.command \=\=\= parsedCommand\);
+if \(matchedCommand\) \{
+const \{ response, color, prefix \} \= matchedCommand;
+const formattedResponse \= \`</span>{prefix} ${response}`;
+          displayResponse(formattedResponse, color);
+        } else {
+          displayResponse(`Commande inconnue: ${parsedCommand}`, '#fff');
+        }
+      }
+    
+      // Fonction pour gérer l'entrée de l'utilisateur
+      function handleInput(event) {
+        if (event.key === 'Enter') {
+          const command = input.value;
+          const div = document.createElement('div');
+          div.textContent = '> ' + command;
+          terminal.appendChild(div);
+          processCommand(command);
+          input.value = '';
+        }
+      }
+    
+      // Charger les commandes à partir des fichiers JSON et gérer l'entrée de l'utilisateur
+      Promise.all([
+        'id.json',
+        'build.json',
+        'ppa.json',
+        'gouv.json'
+      ].map(file => new Promise((resolve) => {
+        loadCommands(file, resolve);
+      }))).then(function(results) {
+        commandsData = results.reduce((acc, data) => {
+          return {
+            commands: acc.commands.concat(data.commands)
+          };
+        }, { commands: [] });
+    
+        input.addEventListener('keydown', handleInput);
+      });
+    });
+  </script>
+</body>
+</html
