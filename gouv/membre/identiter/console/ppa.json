@@ -3,7 +3,7 @@
     {
       "command": "/ppa",
       "prefix": "⚔️",
-      "response": " liste des permis ( arme : ?ppa-N-prenom ) ( ?build-N-prenom )",
+      "response": " ?ppa-N-prenom ",
       "color": "#ff0"
     },
 
@@ -13,7 +13,7 @@
       "command": " ?ppa-A-john ",
       "prefix": "⚔️",
       "response": " Tout type d'armes autoriser. ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
 
@@ -21,21 +21,21 @@
       "command": " ?ppa-A-loriana",
       "prefix": "⚔️",
       "response": "   Arme : Lourde , Leger , poing , Z : Publique , Privée ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
           {
       "command": " ?ppa-S-nathan ",
       "prefix": "⚔️",
       "response": " Arme : x ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
           {
       "command": " ?ppa-P-fransisco ",
       "prefix": "⚔️",
       "response": " Arme : leger en publique et privee  ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
 
@@ -43,21 +43,21 @@
       "command": " ?ppa-A-selim ",
       "prefix": "⚔️",
       "response": " Arme : leger en publique et privee  ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
            {
       "command": " ?ppa-A-aika ",
       "prefix": "⚔️",
       "response": " Arme : leger en publique et privee  ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     },
 
        {
       "command": " ?ppa-C-mike ",
       "prefix": "⚔️",
       "response": " Arme : leger en  privee  ",
-      "color": "#ff0"
+      "color": "#1ee38d"
     }
   ]
 }
