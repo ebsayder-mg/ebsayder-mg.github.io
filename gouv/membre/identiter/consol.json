@@ -1,0 +1,104 @@
+{
+  "commands": [
+    {
+      "command": "/gouv",
+      "prefix": "⚔️",
+      "response": " liste des permis ( arme : ?ppa-N-prenom ) ( ?build-N-prenom )",
+      "color": "#ff0"
+    },
+
+
+
+       {
+      "command": " ?ppa-A-john ",
+      "prefix": "⚔️",
+      "response": " Tout type d'armes autoriser. ",
+      "color": "#ff0"
+    },
+
+
+          {
+      "command": " ?ppa-A-loriana",
+      "prefix": "⚔️",
+      "response": "   Arme : Lourde , Leger , poing , Z : Publique , Privée ",
+      "color": "#ff0"
+    },
+
+          {
+      "command": " ?ppa-S-nathan ",
+      "prefix": "⚔️",
+      "response": " Arme : x ",
+      "color": "#ff0"
+    },
+
+          {
+      "command": " ?ppa-P-fransisco ",
+      "prefix": "⚔️",
+      "response": " Arme : leger en publique et privee  ",
+      "color": "#ff0"
+    },
+
+
+           {
+      "command": " ?ppa-A-selim ",
+      "prefix": "⚔️",
+      "response": " Arme : leger en publique et privee  ",
+      "color": "#ff0"
+    },
+
+           {
+      "command": " ?ppa-A-aika ",
+      "prefix": "⚔️",
+      "response": " Arme : leger en publique et privee  ",
+      "color": "#ff0"
+    },
+
+       {
+      "command": " ?ppa-C-mike ",
+      "prefix": "⚔️",
+      "response": " Arme : leger en  privee  ",
+      "color": "#ff0"
+    },
+
+
+
+        {
+      "command": " ?build-C-mike ",
+      "prefix": "🏗️",
+      "response": " valide en full   ",
+      "color": "#ff0"
+    },
+
+
+
+    
+
+        {
+      "command": " ?build-C-mike ",
+      "prefix": "🏗️",
+      "response": " valide en full   ",
+      "color": "#ff0"
+    },
+
+
+
+    
+
+        {
+      "command": " ?build-A-john ",
+      "prefix": "🏗️",
+      "response": " valide en 1  ",
+      "color": "#ff0"
+    },
+
+
+    
+    
+    {
+      "command": "/commande2",
+      "prefix": "!",
+      "response": "Réponse de la commande 2",
+      "color": "#f00"
+    }
+  ]
+}
