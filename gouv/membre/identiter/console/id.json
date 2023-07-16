@@ -2,8 +2,8 @@
   "commands": [
     {
       "command": "/id",
-      "prefix": "*",
-      "response": "?id-N-gouv",
+      "prefix": "🪪",
+      "response": "?id-N-prenom",
       "color": "#ff0"
     },
     {
