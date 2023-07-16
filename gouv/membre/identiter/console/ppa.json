@@ -1,7 +1,7 @@
 {
   "commands": [
     {
-      "command": "/gouv",
+      "command": "/ppa",
       "prefix": "⚔️",
       "response": " liste des permis ( arme : ?ppa-N-prenom ) ( ?build-N-prenom )",
       "color": "#ff0"
