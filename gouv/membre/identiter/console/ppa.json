@@ -3,60 +3,49 @@
     {
       "command": "/ppa",
       "prefix": "⚔️",
-      "response": " ?ppa-N-prenom ",
+      "response": "?ppa-N-prenom",
       "color": "#ff0"
     },
-
-
-
-       {
-      "command": " ?ppa-A-john ",
+    {
+      "command": "?ppa-A-john",
       "prefix": "⚔️",
-      "response": " Tout type d'armes autoriser. ",
+      "response": "Tout type d'armes autorisé.",
       "color": "#1ee38d"
     },
-
-
-          {
-      "command": " ?ppa-A-loriana",
+    {
+      "command": "?ppa-A-loriana",
       "prefix": "⚔️",
-      "response": "   Arme : Lourde , Leger , poing , Z : Publique , Privée ",
+      "response": "Arme : Lourde, Léger, Poing, Z : Publique, Privée",
       "color": "#1ee38d"
     },
-
-          {
-      "command": " ?ppa-S-nathan ",
+    {
+      "command": "?ppa-S-nathan",
       "prefix": "⚔️",
-      "response": " Arme : x ",
+      "response": "Arme : x",
       "color": "#1ee38d"
     },
-
-          {
-      "command": " ?ppa-P-fransisco ",
+    {
+      "command": "?ppa-P-fransisco",
       "prefix": "⚔️",
-      "response": " Arme : leger en publique et privee  ",
+      "response": "Arme : léger en publique et privée",
       "color": "#1ee38d"
     },
-
-
-           {
-      "command": " ?ppa-A-selim ",
+    {
+      "command": "?ppa-A-selim",
       "prefix": "⚔️",
-      "response": " Arme : leger en publique et privee  ",
+      "response": "Arme : léger en publique et privée",
       "color": "#1ee38d"
     },
-
-           {
-      "command": " ?ppa-A-aika ",
+    {
+      "command": "?ppa-A-aika",
       "prefix": "⚔️",
-      "response": " Arme : leger en publique et privee  ",
+      "response": "Arme : léger en publique et privée",
       "color": "#1ee38d"
     },
-
-       {
-      "command": " ?ppa-C-mike ",
+    {
+      "command": "?ppa-C-mike",
       "prefix": "⚔️",
-      "response": " Arme : leger en  privee  ",
+      "response": "Arme : léger en privée",
       "color": "#1ee38d"
     }
   ]
