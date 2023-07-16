@@ -6,41 +6,24 @@
       "response": " ?build-N-prenom ",
       "color": "#ff0"
     },
-
-
- 
-        {
+    {
       "command": " ?build-C-mike ",
       "prefix": "🏗️",
       "response": " valide en full   ",
       "color": "#ff0"
     },
-
-
-
-    
-
-        {
+    {
       "command": " ?build-C-mike ",
       "prefix": "🏗️",
       "response": " valide en full   ",
       "color": "#ff0"
     },
-
-
-
-    
-
-        {
+    {
       "command": " ?build-A-john ",
       "prefix": "🏗️",
       "response": " valide en 1  ",
       "color": "#ff0"
     },
-
-
-    
-    
     {
       "command": "/commande2",
       "prefix": "!",
