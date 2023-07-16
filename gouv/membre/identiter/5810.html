@@ -35,10 +35,9 @@
       const input = document.getElementById('input');
       
       // Charger les commandes à partir d'un fichier JSON externe
-      function loadCommands(file, callback) {
-        fetch(`console/${file}`)
+      function loadCommands(file) {
+        return fetch(`console/${file}`)
           .then(response => response.json())
-          .then(callback)
           .catch(error => {
             console.error(`Erreur lors du chargement du fichier ${file}:`, error);
           });
@@ -53,9 +52,15 @@
       }
 
       // Fonction pour traiter les commandes
-      function processCommand(command, commandsData) {
+      function processCommand(command) {
         const parsedCommand = command.trim();
-        const matchedCommand = commandsData.commands.find(c => c.command === parsedCommand);
+        const commandsData = await Promise.all([
+          loadCommands('id.json'),
+          loadCommands('build.json'),
+          loadCommands('ppa.json'),
+          loadCommands('gouv.json')
+        ]);
+        const matchedCommand = commandsData.flatMap(c => c.commands).find(c => c.command === parsedCommand);
         
         if (matchedCommand) {
           const { response, color, prefix } = matchedCommand;
@@ -67,36 +72,25 @@
       }
 
       // Fonction pour gérer l'entrée de l'utilisateur
-      function handleInput(event, commandsData) {
+      function handleInput(event) {
         if (event.key === 'Enter') {
           const command = input.value;
           const div = document.createElement('div');
           div.textContent = '> ' + command;
           terminal.appendChild(div);
-          processCommand(command, commandsData);
+          processCommand(command);
           input.value = '';
         }
       }
 
       // Charger les commandes à partir des fichiers JSON et gérer l'entrée de l'utilisateur
-      Promise.all([
-        'id.json',
-        'build.json',
-        'ppa.json',
-        'gouv.json'
-      ].map(file => new Promise((resolve) => {
-        loadCommands(file, resolve);
-      }))).then(function(commandsData) {
-        const mergedCommandsData = commandsData.reduce((acc, data) => {
-          return {
-            commands: acc.commands.concat(data.commands)
-          };
-        }, { commands: [] });
-
-        input.addEventListener('keydown', function(event) {
-          handleInput(event, mergedCommandsData);
-        });
-      });
+      await Promise.all([
+        loadCommands('id.json'),
+        loadCommands('build.json'),
+        loadCommands('ppa.json'),
+        loadCommands('gouv.json')
+      ]);
+      input.addEventListener('keydown', handleInput);
     });
   </script>
 </body>
