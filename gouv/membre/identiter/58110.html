@@ -1,16 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>GFLP - LSP | Ebsayder RP</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'><link rel="stylesheet" href="https://ebsayder-mg.github.io/style.css">
-<link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
-  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'>
+  <link rel="stylesheet" href="https://ebsayder-mg.github.io/style.css">
+  <link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <header>
   <div class='container'>
     <div class='mobile_nav'>
@@ -37,13 +35,13 @@
             <a href='https://ebsayder-mg.github.io/blog'>Actualiter</a>
           </li>
           <li>
-            <a href='https://ebsayder-mg.github.io/contact'> A propos de nous ?</a>
+            <a href='https://ebsayder-mg.github.io/contact'>A propos de nous ?</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class='logo'>
-      <span>GFLP  |Ebsayder</span>
+      <span>GFLP | Ebsayder</span>
     </div>
     <nav class='head_nav'>
       <ul>
@@ -54,7 +52,7 @@
           <a href='https://ebsayder-mg.github.io/gouv/'>Gouv</a>
         </li>
         <li>
-          <a href='https://ebsayder-mg.github.io/support.html'>Supprot</a>
+          <a href='https://ebsayder-mg.github.io/support.html'>Support</a>
         </li>
         <li>
           <a href='https://ebsayder-mg.github.io/blog'>Actualitées</a>
@@ -70,191 +68,83 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M149.996,0C67.157,0,0.001,67.161,0.001,149.997S67.157,300,149.996,300s150.003-67.163,150.003-150.003    S232.835,0,149.996,0z M149.999,232.951c-10.766,0-19.499-8.725-19.499-19.499h38.995    C169.497,224.226,160.765,232.951,149.999,232.951z M215.889,193.9h-0.005v-0.001c0,7.21-5.843,7.685-13.048,7.685H97.16    c-7.208,0-13.046-0.475-13.046-7.685v-1.242c0-5.185,3.045-9.625,7.42-11.731l4.142-35.753c0-26.174,18.51-48.02,43.152-53.174    v-13.88c0-6.17,5.003-11.173,11.176-11.173c6.17,0,11.173,5.003,11.173,11.173V92c24.642,5.153,43.152,26.997,43.152,53.174    l4.142,35.758c4.375,2.109,7.418,6.541,7.418,11.726V193.9z"/></svg>
         </a>
       </div>
-      
     </div>
   </div>
 </header>
 <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!DOCTYPE html>
-<html>
-<head>
-  <title>Terminal Windows</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: monospace;
-      padding: 20px;
-    }
-    
-    #terminal {
-      width: 100%;
-      height: 300px;
-      overflow: auto;
-      border: 1px solid #fff;
-      padding: 10px;
-    }
-    
-    #input {
-      color: #0f0;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
   <div id="terminal"></div>
   <input id="input" type="text" placeholder="Entrez une commande">
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const terminal = document.getElementById('terminal');
-      const input = document.getElementById('input');
-      let commandsData = null;
-      
-      // Charger les commandes à partir d'un fichier JSON externe
-      function loadCommands(file, callback) {
-        fetch(`console/${file}`)
-          .then(response => response.json())
-          .then(callback)
-          .catch(error => {
-            console.error(`Erreur lors du chargement du fichier ${file}:`, error);
-          });
-      }
-
-      // Fonction pour afficher les réponses
-      function displayResponse(response, color) {
-        const div = document.createElement('div');
-        div.style.color = color;
-        div.textContent = response;
-        terminal.appendChild(div);
-      }
-
-      // Fonction pour traiter les commandes
-      function processCommand(command) {
-        const parsedCommand = command.trim();
-        const matchedCommand = commandsData.commands.find(c => c.command === parsedCommand);
-        
-        if (matchedCommand) {
-          const { response, color, prefix } = matchedCommand;
-          const formattedResponse = `${prefix} ${response}`;
-          displayResponse(formattedResponse, color);
-        } else {
-          displayResponse(`Commande inconnue: ${parsedCommand}`, '#fff');
-        }
-      }
-
-      // Fonction pour gérer l'entrée de l'utilisateur
-      function handleInput(event) {
-        if (event.key === 'Enter') {
-          const command = input.value;
-          const div = document.createElement('div');
-          div.textContent = '> ' + command;
-          terminal.appendChild(div);
-          processCommand(command);
-          input.value = '';
-        }
-      }
-
-      // Charger les commandes à partir des fichiers JSON et gérer l'entrée de l'utilisateur
-      Promise.all([
-        'id.json',
-        'build.json',
-        'ppa.json',
-        'gouv.json'
-      ].map(file => new Promise((resolve) => {
-        loadCommands(file, resolve);
-      }))).then(function(results) {
-        commandsData = results.reduce((acc, data) => {
-          return {
-            commands: acc.commands.concat(data.commands)
-          };
-        }, { commands: [] });
-
-        input.addEventListener('keydown', handleInput);
-      });
-    });
-  </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-
 </main>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="https://ebsayder-mg.github.io/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const terminal = document.getElementById('terminal');
+    const input = document.getElementById('input');
+    let commandsData = null;
+    
+    // Charger les commandes à partir d'un fichier JSON externe
+    function loadCommands(file, callback) {
+      fetch(`console/${file}`)
+        .then(response => response.json())
+        .then(callback)
+        .catch(error => {
+          console.error(`Erreur lors du chargement du fichier ${file}:`, error);
+        });
+    }
 
+    // Fonction pour afficher les réponses
+    function displayResponse(response, color) {
+      const div = document.createElement('div');
+      div.style.color = color;
+      div.textContent = response;
+      terminal.appendChild(div);
+    }
+
+    // Fonction pour traiter les commandes
+    function processCommand(command) {
+      const parsedCommand = command.trim();
+      const matchedCommand = commandsData.commands.find(c => c.command === parsedCommand);
+      
+      if (matchedCommand) {
+        const { response, color, prefix } = matchedCommand;
+        const formattedResponse = `${prefix} ${response}`;
+        displayResponse(formattedResponse, color);
+      } else {
+        displayResponse(`Commande inconnue: ${parsedCommand}`, '#fff');
+      }
+    }
+
+    // Fonction pour gérer l'entrée de l'utilisateur
+    function handleInput(event) {
+      if (event.key === 'Enter') {
+        const command = input.value;
+        const div = document.createElement('div');
+        div.textContent = '> ' + command;
+        terminal.appendChild(div);
+        processCommand(command);
+        input.value = '';
+      }
+    }
+
+    // Charger les commandes à partir des fichiers JSON et gérer l'entrée de l'utilisateur
+    Promise.all([
+      'id.json',
+      'build.json',
+      'ppa.json',
+      'gouv.json'
+    ].map(file => new Promise((resolve) => {
+      loadCommands(file, resolve);
+    }))).then(function(results) {
+      commandsData = results.reduce((acc, data) => {
+        return {
+          commands: acc.commands.concat(data.commands)
+        };
+      }, { commands: [] });
+
+      input.addEventListener('keydown', handleInput);
+    });
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="https://ebsayder-mg.github.io/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="EnesGP">
-  <meta name="description" content="Site officiel de GFLP | ebsayder">
-  <meta name="keywords" content="GFLP, ebsayder, SRDMG">
-  <meta property="og:title" content="GFLP - SRDMG">
-  <meta property="og:description" content="Site officiel de GFLP | ebsayder">
-  <meta property="og:image" content="https://ebsayder-mg.github.io/favicon.ico">
-  <meta property="og:url" content="https://ebsayder-mg.github.io/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GFLP - SRDMG">
-  <meta name="twitter:description" content="Site officiel de GFLP | ebsayder">
-  <meta name="twitter:image" content="https://ebsayder-mg.github.io/favicon.ico">
-  <link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico">
-  <title>GFLP - SRDMG</title>
-</head>
-<body>
-  <!-- Contenu de votre site ici -->
-</body>
-</html>
-
-
-
-
-
