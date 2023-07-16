@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GFLP - LSPc[ dev  ] </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: monospace;
+      padding: 20px;
+    }
+    
+    #terminal {
+      width: 100%;
+      height: 300px;
+      overflow: auto;
+      border: 1px solid #fff;
+      padding: 10px;
+    }
+    
+    #input {
+      color: #0f0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <input id="input" type="text" placeholder="Entrez une commande">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const terminal = document.getElementById('terminal');
+      const input = document.getElementById('input');
+      
+      // Charger les commandes à partir d'un fichier JSON externe
+      function loadCommands(callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.overrideMimeType('application/json');
+        xhr.open('GET', 'consol.json', true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            callback(JSON.parse(xhr.responseText));
+          }
+        };
+        xhr.send(null);
+      }
+
+      // Fonction pour afficher les réponses
+      function displayResponse(response, color) {
+        const div = document.createElement('div');
+        div.style.color = color;
+        div.textContent = response;
+        terminal.appendChild(div);
+      }
+
+      // Fonction pour traiter les commandes
+      function processCommand(command, commandsData) {
+        const parsedCommand = command.trim();
+        const matchedCommand = commandsData.commands.find(c => c.command === parsedCommand);
+        
+        if (matchedCommand) {
+          const { response, color, prefix } = matchedCommand;
+          const formattedResponse = `${prefix} ${response}`;
+          displayResponse(formattedResponse, color);
+        } else {
+          displayResponse(`Commande inconnue: ${parsedCommand}`, '#fff');
+        }
+      }
+
+      // Fonction pour gérer l'entrée de l'utilisateur
+      function handleInput(event, commandsData) {
+        if (event.key === 'Enter') {
+          const command = input.value;
+          const div = document.createElement('div');
+          div.textContent = '> ' + command;
+          terminal.appendChild(div);
+          processCommand(command, commandsData);
+          input.value = '';
+        }
+      }
+
+      // Charger les commandes à partir du fichier JSON et gérer l'entrée de l'utilisateur
+      loadCommands(function(commandsData) {
+        input.addEventListener('keydown', function(event) {
+          handleInput(event, commandsData);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
