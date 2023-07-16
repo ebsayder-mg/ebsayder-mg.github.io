@@ -32,8 +32,8 @@
     
     {
       "command": "/gouv",
-      "prefix": "!",
-      "response": " 🏛️ ?build-N-prenom",
+      "prefix": "🏛️",
+      "response": "?build-N-prenom",
       "color": "#f00"
     }
   ]
