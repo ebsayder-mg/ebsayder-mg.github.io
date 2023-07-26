@@ -84,11 +84,11 @@
 </header>
 <main>
 
-<br><h1>EbsayderRP , visitez des logement ? </h1>
-<p><br></p>
-<p><br></p>
-<p><h6>immeuble</h6> <h6>Prix : 900€</h6> Immeuble , chambre , salon  - cuisine , toilettes - salle de bain  <h6><a href="./immeuble/MGI-hotel.html">Accedez ?</a></h6></p>
-<p><br></p>
+  <br><h1>EbsayderRP , visitez des logement ? </h1>
+  <p><br></p>
+   <p><br></p>
+
+  <p><br></p>
 
 <p><br></p>
 
@@ -98,6 +98,86 @@
 
   
 
+
+<!DOCTYPE html> 
+  <html>        
+    <head>     
+      <title>PikaYut™</title>            
+      <!-- linking the stylesheet(CSS) -->     
+       <link rel="stylesheet" type="text/css" href="./style.css"> 
+       </head>    
+       <body>            <!-- input tag -->    
+       <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="faite une recherche..">          
+      <!-- ordered list -->     
+      <ol id='list'>   
+      <li class="Minecraft">    <p><h6>immeuble</h6> <h6>Prix : 900€</h6> Immeuble , chambre , salon  - cuisine , toilettes - salle de bain  <h6><a href="./immeuble/MGI-hotel.html">Accedez ?</a></h6></p> </li>         
+      <li class="Minecraft">Beta01</li> 
+    </ol> 
+    </body>   
+    </html>
+
+
+
+
+
+
+
+
+
+
+<!-- bar de recherche pris a partir de github / codepe,.io -->
+
+
+
+  
+  <style>
+    #searchbar{
+    
+     margin-left: 10px;
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+ 
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+ 
+.animals{
+   display: list-item;    
+  } 
+</style>
+
+  <script src="https://pikayutmg.github.io/api.js"></script>
+<script>
+// JavaScript code
+function search_animal() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('Minecraft');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+</script>
   
 </main>
 <!-- partial -->
