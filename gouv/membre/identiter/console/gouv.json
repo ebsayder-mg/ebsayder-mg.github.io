@@ -23,6 +23,60 @@
       "prefix": "🏛️",
       "response": "?gouv-N-prenom",
       "color": "#f00"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "command": "?permis-A-john",
+      "prefix": "🚔🚗🚒🚛🚚",
+      "response": "Permis : Valide ",
+      "color": "#1ee38d"
+    },
+
+
+    {
+      "command": "?permis-A-loriana",
+      "prefix": "🚔🚗🚒🚛🚚",
+      "response": "Permis : Valide ",
+      "color": "#1ee38d"
+    },
+
+
+     {
+      "command": "?permis-C-mike ",
+      "prefix": "🚊🚗",
+      "response": "Permis : Valide ",
+      "color": "#1ee38d"
+    },
+
+ 
+
+    
+
+     {
+      "command": "/permis",
+      "prefix": "🏛️",
+      "response": "?permis-N-prenom",
+      "color": "#f00"
     }
   ]
 }
