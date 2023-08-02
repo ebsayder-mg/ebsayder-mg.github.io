@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #e8eef5;
+  overflow: hidden;
+  height: 100%;
+}
+
+h3, h4, h5 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 8px;
+}
+
+h5 {
+  font-size: 7px;
+}
+
+.ID-card {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  top: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url("https://i.ibb.co/NL188dQ/white-wood.png");
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  filter: opacity(90%);
+}
+
+.top-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.flag {
+  height: 10px;
+  margin-right: 5px;
+}
+
+.card-title, .card-title-en {
+  line-height: 100%;
+}
+
+.name, .name-en, .ID-number {
+  font-weight: normal;
+}
+
+.card-title-en {
+  margin-left: auto;
+}
+
+.middle-row {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.bottom-row {
+  position: absolute;
+  bottom: 20px;
+}
+
+.ID-photo {
+  display: block;
+  width: 100px;
+  height: 128px;
+  background-image: url("http://p0.meituan.net/movie/a9ee38e037ecc14a1c1fc5d9b7d1304330866.jpg");
+  background-repeat: no-repeat;
+  background-position: -90px center;
+  background-size: 250px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+.series-number {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  z-index: 10;
+}
+
+.signature-title {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.signature {
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: 100;
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+}
+
+.ID-number {
+  line-height: 100%;
+  margin-top: 5px;
+}
+
+.title {
+  text-align: center;
+  margin: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+}
+
+.shape-1 {
+  z-index: 1;
+  position: absolute;
+  top: calc(97vh + -44px);
+  left: calc(21vw + -44px);
+  transform: rotate(59deg);
+  width: 59px;
+  height: 59px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.shape-2 {
+  z-index: 1;
+  position: absolute;
+  top: calc(22vh + -59px);
+  left: calc(86vw + -59px);
+  transform: rotate(6deg);
+  width: 55px;
+  height: 55px;
+  background-color: rgba(69, 139, 68, 0.95);
+}
+
+.shape-3 {
+  z-index: 1;
+  position: absolute;
+  top: calc(38vh + -1px);
+  left: calc(4vw + -1px);
+  transform: rotate(359deg);
+  border: 49px solid rgba(230, 180, 80, 0.95);
+  border-color: rgba(200, 212, 230, 0.95) transparent transparent transparent;
+}
+
+.shape-4 {
+  z-index: 1;
+  position: absolute;
+  top: calc(93vh + 18px);
+  left: calc(11vw + 18px);
+  transform: rotate(32deg);
+  border: 50px solid rgba(255, 255, 255, 0.95);
+  border-color: rgba(30, 75, 133, 0.95) transparent transparent transparent;
+}
+
+.shape-5 {
+  z-index: 1;
+  position: absolute;
+  top: calc(9vh + 14px);
+  left: calc(92vw + 14px);
+  transform: rotate(332deg);
+  border: 42px solid rgba(255, 255, 255, 0.95);
+  border-color: rgba(30, 75, 133, 0.95) transparent transparent transparent;
+}
+
+.shape-6 {
+  z-index: 1;
+  position: absolute;
+  top: calc(95vh + 27px);
+  left: calc(98vw + 27px);
+  transform: rotate(282deg);
+  width: 43px;
+  height: calc(43px / 2);
+  border-bottom-left-radius: 43px;
+  border-bottom-right-radius: 43px;
+  background-color: rgba(230, 180, 80, 0.95);
+}
+
+.shape-7 {
+  z-index: 1;
+  position: absolute;
+  top: calc(89vh + 55px);
+  left: calc(81vw + 55px);
+  transform: rotate(202deg);
+  width: 43px;
+  height: 43px;
+  background-color: rgba(188, 66, 59, 0.95);
+  border-radius: 100%;
+}
+
+.shape-8 {
+  z-index: 1;
+  position: absolute;
+  top: calc(47vh + 27px);
+  left: calc(66vw + 27px);
+  transform: rotate(192deg);
+  width: 54px;
+  height: 54px;
+  background-color: rgba(200, 212, 230, 0.95);
+  border-radius: 100%;
+}
+
+.shape-9 {
+  z-index: 1;
+  position: absolute;
+  top: calc(42vh + -38px);
+  left: calc(41vw + -38px);
+  transform: rotate(126deg);
+  width: 60px;
+  height: calc(60px / 2);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background-color: rgba(69, 139, 68, 0.95);
+}
+
+.shape-10 {
+  z-index: 1;
+  position: absolute;
+  top: calc(92vh + 37px);
+  left: calc(89vw + 37px);
+  transform: rotate(353deg);
+  border: 43px solid rgba(255, 255, 255, 0.95);
+  border-color: rgba(69, 139, 68, 0.95) transparent transparent transparent;
+}
