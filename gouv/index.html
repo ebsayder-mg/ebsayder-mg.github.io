@@ -96,6 +96,67 @@ border-radius : 59px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .law-entry {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .law-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>GenlensFly Law Viewer</h1>
+    <div id="result"></div>
+
+    <script>
+        fetch('https://ebsayder-mg.github.io/gouv/loie.json')
+            .then(response => response.json())
+            .then(data => {
+                const resultDiv = document.getElementById("result");
+                const lawEntries = data.articles.map(article => `
+                    <div class="law-entry">
+                        <div class="law-title">Article ${article.article} - Section ${article.section}</div>
+                        <div class="law-content">${article.content}</div>
+                    </div>
+                `).join('');
+                resultDiv.innerHTML = lawEntries;
+            })
+            .catch(error => {
+                const resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
+                console.error('Erreur lors de la récupération du JSON:', error);
+            });
+    </script>
+</body>
+
+
+
+  
+
+
 <link rel="icon" href="favicon.ico" />
 
 </head>
