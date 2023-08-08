@@ -1,1 +1,51 @@
-
+{
+  "date": "9 août 2023",
+  "team": "GFLP - LSP • SRDMG",
+  "articles": [
+    {
+      "article": "I",
+      "section": "G-1.1",
+      "content": "Le gouvernement de GenlensFly est la pierre angulaire de notre société. Le Président, élu par les joueurs, est chargé de guider notre nation vers un futur prospère."
+    },
+    {
+      "article": "II",
+      "section": "G-1.2",
+      "content": "Toute utilisation de véhicules, d'armes ou pour des constructions majeures nécessite une licence délivrée par les autorités de GenlensFly."
+    },
+    {
+      "article": "III",
+      "section": "G-1.3",
+      "content": "Les licences sont divisées en trois catégories : Licence de Voiture, Licence d'Arme et Licence de Construction."
+    },
+    {
+      "article": "IV",
+      "section": "G-1.4",
+      "content": "La Licence de Voiture autorise l'utilisation de véhicules modernes pour des raisons personnelles et commerciales."
+    },
+    {
+      "article": "V",
+      "section": "G-1.5",
+      "content": "La Licence d'Arme permet la possession et l'utilisation responsables d'armes dans le but de garantir la sécurité personnelle et la défense de GenlensFly."
+    },
+    {
+      "article": "VI",
+      "section": "G-1.6",
+      "content": "La Licence de Construction autorise la réalisation de projets architecturaux majeurs tout en respectant les normes de sécurité et d'esthétique."
+    },
+    {
+      "article": "VII",
+      "section": "G-1.7",
+      "content": "Les candidats doivent passer un examen gouvernemental pour obtenir une licence. Les détails de l'examen varient en fonction de la catégorie de licence."
+    },
+    {
+      "article": "VIII",
+      "section": "G-1.8",
+      "content": "Le Bureau des Licences, géré par l'Équipe de Modération GFLP - LSP • SRDMG, est responsable de l'attribution et de la gestion des licences, ainsi que de la surveillance du respect des règles."
+    },
+    {
+      "article": "IX",
+      "section": "G-1.9",
+      "content": "GenlensFly maintient un système de surveillance moderne pour garantir le respect des licences. Toute violation entraînera des sanctions conformes à la gravité de l'infraction."
+    }
+  ]
+}
