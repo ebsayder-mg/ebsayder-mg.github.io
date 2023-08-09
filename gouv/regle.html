@@ -68,8 +68,76 @@
    
     
     
-    <center><h1>Ebsayder | Loi du Gouvernement</h1></center>
-    <div class="reglement-container" id="result"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebsayder RP | Gouvernement Règlement</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .reglement-entry {
+            border: 1px solid #ccc;
+            background-color: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .reglement-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .reglement-content {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- ... (Votre code d'en-tête ici) ... -->
+</header>
+<main>
+    <div class="container">
+        <center><h1>Ebsayder | Loi du Gouvernement</h1></center>
+        <div class="reglement-container" id="result"></div>
+    </div>
 </main>
 <script>
     fetch('https://ebsayder-mg.github.io/gouv/json-d/regle.json')
@@ -90,7 +158,8 @@
             console.error('Erreur lors de la récupération du JSON:', error);
         });
 </script>
- 
+</body>
+</html>
 
 
 
