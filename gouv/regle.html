@@ -1,166 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr" >
-<head>
-  <meta charset="UTF-8">
-  <title>Ebsayder RP | Gouvernement Loie  </title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'><link rel="stylesheet" href="./style.css">
-<link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<header>
-  <div class='container'>
-    <div class='mobile_nav'>
-      <button class='burger' title='Open and close menu'>
-        <span class='mobile_nav__label'>Menu</span>
-        <div class='top stripe'></div>
-        <div class='middle stripe'></div>
-        <div class='bottom stripe'></div>
-      </button>
-    </div>
-    <div class='mobile_menu'>
-      <nav>
-        <ul>
-          <li class='visited'>
-            <a href='https://ebsayder-mg.github.io/'>Home</a>
-          </li>
-          <li>
-            <a href='https://ebsayder-mg.github.io/gouv/'>Gouvernement</a>
-          </li>
-          <li>
-            <a href='https://ebsayder-mg.github.io/support.html'>Support</a>
-          </li>
-          <li>
-            <a href='https://ebsayder-mg.github.io/gouv/role.html'>Metier</a>
-          </li>
-          <li>
-            <a href='https://ebsayder-mg.github.io/contact'> A propos de nous ?</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class='logo'>
-      <span>GFLP , LSP developement |Ebsayder</span>
-    </div>
-    <nav class='head_nav'>
-      <ul>
-        <li class='visited'>
-          <a href='https://ebsayder-mg.github.io/'>Home</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/gouv/'>Gouv</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/support.html'>Supprot</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/gouv/role.html'>Metier</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/contact'>A propos de nous ?</a>
-        </li>
-      </ul>
-    </nav>
-    
-  </div>
-</header>
-<main>
-
-<style>
-      body {
-   text-decoration: none;
-      }      
-         div {
-   text-decoration: none;
-      }      
-      
-          html {
-   text-decoration: none;
-                
-                .join-gouv
-{
-
-background : #555  ;
-color: silver;
-padding : 15px 35px;
-border-radius : 59px;
-
-
-}
-      }      
-</style>
-
-
-
-
-<link rel="icon" href="favicon.ico" />
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-
-<!-- partial -->
-  <center>
-  <center><h1>Ebsayder|•MGI Loie </h1></center>
-  
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .law-entry {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .law-title {
-            font-weight: bold;
-        }
-    </style>
+    <title>Ebsayder RP | Gouvernement Règlement</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
 </head>
 <body>
-    <h1>GenlensFly Loi </h1>
-    <div id="result"></div>
-
-    <script>
-        fetch('https://ebsayder-mg.github.io/gouv/json-d/regle.json')
-            .then(response => response.json())
-            .then(data => {
-                const resultDiv = document.getElementById("result");
-                const lawEntries = data.articles.map(article => `
-                    <div class="law-entry">
-                        <div class="law-title">Article ${article.article} - Section ${article.section}</div>
-                        <div class="law-content">${article.content}</div>
-                    </div>
-                `).join('');
-                resultDiv.innerHTML = lawEntries;
-            })
-            .catch(error => {
-                const resultDiv = document.getElementById("result");
-                resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
-                console.error('Erreur lors de la récupération du JSON:', error);
-            });
-    </script>
+<header>
+    <div class='container'>
+        <div class='mobile_nav'>
+            <button class='burger' title='Open and close menu'>
+                <span class='mobile_nav__label'>Menu</span>
+                <div class='top stripe'></div>
+                <div class='middle stripe'></div>
+                <div class='bottom stripe'></div>
+            </button>
+        </div>
+        <div class='mobile_menu'>
+            <nav>
+                <ul>
+                    <li class='visited'>
+                        <a href='https://ebsayder-mg.github.io/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='https://ebsayder-mg.github.io/gouv/'>Gouvernement</a>
+                    </li>
+                    <li>
+                        <a href='https://ebsayder-mg.github.io/support.html'>Support</a>
+                    </li>
+                    <li>
+                        <a href='https://ebsayder-mg.github.io/gouv/role.html'>Métier</a>
+                    </li>
+                    <li>
+                        <a href='https://ebsayder-mg.github.io/contact'>À propos de nous ?</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class='logo'>
+            <span>GFLP, LSP développement | Ebsayder</span>
+        </div>
+        <nav class='head_nav'>
+            <ul>
+                <li class='visited'>
+                    <a href='https://ebsayder-mg.github.io/'>Home</a>
+                </li>
+                <li>
+                    <a href='https://ebsayder-mg.github.io/gouv/'>Gouv</a>
+                </li>
+                <li>
+                    <a href='https://ebsayder-mg.github.io/support.html'>Support</a>
+                </li>
+                <li>
+                    <a href='https://ebsayder-mg.github.io/gouv/role.html'>Métier</a>
+                </li>
+                <li>
+                    <a href='https://ebsayder-mg.github.io/contact'>À propos de nous ?</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <center><h1>Ebsayder | Loi du Gouvernement</h1></center>
+    <div class="reglement-container" id="result"></div>
+</main>
+<script>
+    fetch('https://ebsayder-mg.github.io/gouv/json-d/reglement.json')
+        .then(response => response.json())
+        .then(data => {
+            const resultDiv = document.getElementById("result");
+            const reglementEntries = data.articles.map(article => `
+                <div class="reglement-entry">
+                    <div class="reglement-title">Article ${article.article} - Section ${article.section}</div>
+                    <div class="reglement-content">${article.content}</div>
+                </div>
+            `).join('');
+            resultDiv.innerHTML = reglementEntries;
+        })
+        .catch(error => {
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
+            console.error('Erreur lors de la récupération du JSON:', error);
+        });
+</script>
 </body>
 </html>
-    
-
-    
-  <!-- Contenu de votre Site ici -->
-</body>
-</html>
-  
