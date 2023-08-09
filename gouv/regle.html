@@ -65,11 +65,14 @@
     </div>
 </header>
 <main>
+   
+    
+    
     <center><h1>Ebsayder | Loi du Gouvernement</h1></center>
     <div class="reglement-container" id="result"></div>
 </main>
 <script>
-    fetch('https://ebsayder-mg.github.io/gouv/json-d/reglement.json')
+    fetch('https://ebsayder-mg.github.io/gouv/json-d/regle.json')
         .then(response => response.json())
         .then(data => {
             const resultDiv = document.getElementById("result");
@@ -87,5 +90,33 @@
             console.error('Erreur lors de la récupération du JSON:', error);
         });
 </script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 </html>
