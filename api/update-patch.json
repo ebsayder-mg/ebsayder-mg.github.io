@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Match 1",
+    "patch": "Patch 1.23",
+    "description": "Description du match 1...",
+    "server": "Serveur A",
+    "user": "Utilisateur A",
+    "gflp": "12345",
+    "reup": "Oui"
+  },
+  {
+    "title": "Match 2",
+    "patch": "Patch 1.24",
+    "description": "Description du match 2...",
+    "server": "Serveur B",
+    "user": "Utilisateur B",
+    "gflp": "67890",
+    "reup": "Non"
+  }
+  // Ajoutez plus de matches ici
+]
