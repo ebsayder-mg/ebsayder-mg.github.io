@@ -150,54 +150,25 @@ border-radius : 59px;
 
 
 
-  <script>
-    fetch('https://enesgp.github.io/api-json/Ebsayder/flight.json')
-        .then(response => response.json())
-        .then(data => {
-            const resultDiv = document.getElementById("result");
-            const lawEntries = data.articles.map(article => `
-                <div class="law-entry">
-                    <div class="">${article.article}  <br> ${article.section}</div>
-                    <div class="law-content">${article.content}</div>
-                </div>
-            `).join('');
-            resultDiv.innerHTML = lawEntries;
-        })
-        .catch(error => {
-            const resultDiv = document.getElementById("result");
-            resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
-            console.error('Erreur lors de la récupération du JSON:', error);
-        });
-
-    // Ajouter les liens JSON ici
-    const jsonLinks = [
-        'https://gflp-json-group.github.io/roblox-ebsayder/modération/personrage.json',
-        'https://gflp-json-group.github.io/roblox-ebsayder/modération/pikayut.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/1.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/2.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/3.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/4.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/5.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/6.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/7.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/8.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/9.json',
-        'http://gflp-json-group.github.io/roblox-ebsayder/10.json'
-    ];
-    
-    // Utiliser fetch pour récupérer et afficher les données JSON des liens
-    jsonLinks.forEach(link => {
-        fetch(link)
+    <script>
+        fetch('https://enesgp.github.io/api-json/Ebsayder/flight.json')
             .then(response => response.json())
             .then(data => {
-                // Utiliser les données JSON ici
+                const resultDiv = document.getElementById("result");
+                const lawEntries = data.articles.map(article => `
+                    <div class="law-entry">
+                        <div class="">${article.article}  <br> ${article.section}</div>
+                        <div class="law-content">${article.content}</div>
+                    </div>
+                `).join('');
+                resultDiv.innerHTML = lawEntries;
             })
             .catch(error => {
+                const resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
                 console.error('Erreur lors de la récupération du JSON:', error);
             });
-    });
-  </script>
-
+    </script>
 
 
 
