@@ -121,7 +121,7 @@ border-radius : 59px;
     <div id="result"></div>
 
     <script>
-        fetch('http://192.168.1.191:8080/json.json')
+        fetch('https://gflp-e.vercel.app/gouv/json-d/flight.json')
             .then(response => response.json())
             .then(data => {
                 const resultDiv = document.getElementById("result");
