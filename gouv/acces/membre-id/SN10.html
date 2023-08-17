@@ -1,0 +1,174 @@
+
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>GFLP - LSP | Ebsayder , identity</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'><link rel="stylesheet" href="https://ebsayder-mg.github.io/gouv/acces/s-c/style.css">
+<link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class='container'>
+    <div class='mobile_nav'>
+      <button class='burger' title='Open and close menu'>
+        <span class='mobile_nav__label'>Menu</span>
+        <div class='top stripe'></div>
+        <div class='middle stripe'></div>
+        <div class='bottom stripe'></div>
+      </button>
+    </div>
+    <div class='mobile_menu'>
+      <nav>
+        <ul>
+          <li class='visited'>
+            <a href='https://ebsayder-mg.github.io/'>Home</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <div class='logo'>
+      <span>GFLP  |Ebsayder</span>
+    </div>
+    <nav class='head_nav'>
+      <ul>
+        <li class='visited'>
+          <a href='https://ebsayder-mg.github.io/'>Home</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div class='icons'>
+      <div class='block'>
+        
+      </div>
+      
+    </div>
+  </div>
+</header>
+<main>
+
+
+</body>
+</p></strong></h2>
+
+     
+
+<style>
+   /*Style général pour le corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Style pour l'affichage des données */
+#dataDisplay {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les titres */
+h2 {
+  color: #333;
+}
+
+/* Style pour les propriétés et valeurs */
+p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Style pour les propriétés en gras */
+strong {
+  font-weight: bold;
+}
+</style>
+
+
+<body>
+
+<div id="dataDisplay"></div>
+
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/id.json";
+var targetId = "sn10";
+var dataDisplay = document.getElementById("dataDisplay");
+
+fetch(jsonUrl)
+  .then(response => response.json())
+  .then(data => {
+    if (data.hasOwnProperty(targetId)) {
+      var person = data[targetId];
+      var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+      for (var key in person) {
+        personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
+      }
+
+      dataDisplay.innerHTML = personInfo;
+    } else {
+      dataDisplay.innerHTML = "<p>Aucune carte trouvée pour l'ID " + targetId + "</p>";
+    }
+  })
+  .catch(error => {
+    console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dataDisplay2"></div>
+
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/info.json";
+var targetId = "sn10";
+var dataDisplay = document.getElementById("dataDisplay");
+var dataDisplay2 = document.getElementById("dataDisplay2");
+
+fetch(jsonUrl)
+  .then(response => response.json())
+  .then(data => {
+    if (data.hasOwnProperty(targetId)) {
+      var person = data[targetId];
+      var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+      for (var key in person) {
+        personInfo += "<p><strong>" + key + ":</strong> " + person[key].date + "</p>";
+        personInfo += "<p><strong>Raison:</strong> " + person[key].raison + "</p>";
+        personInfo += "<p><strong>By:</strong> " + person[key].by + "</p>";
+      }
+
+      dataDisplay2.innerHTML = personInfo;
+    } else {
+      dataDisplay2.innerHTML = "<p>Aucune information trouvée pour l'ID " + targetId + "</p>";
+    }
+  })
+  .catch(error => {
+    console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+  });
+</script>
+
+</body>
