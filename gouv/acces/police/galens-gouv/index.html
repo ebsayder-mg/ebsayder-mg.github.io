@@ -37,19 +37,7 @@
             <a href='https://ebsayder-mg.github.io/gouv/'>Gouvernement</a>
           </li>
           <li>
-            <a href='https://ebsayder-mg.github.io/support.html'>Support</a>
-          </li>
-          
-          <li>
-          <a href='https://ebsayder-mg.github.io/gouv/minecraft-addons_join/index.html'>MCPE</a>
-        </li> 
-          
-          <li>
-            <a href='https://ebsayder-mg.github.io/blog'>Actualiter</a>
-          </li>
-          <li>
-            <a href='https://ebsayder-mg.github.io/contact'> A propos de nous ?</a>
-          </li>
+           
         </ul>
       </nav>
     </div>
@@ -64,18 +52,7 @@
         <li>
           <a href='https://ebsayder-mg.github.io/gouv/'>Gouv</a>
         </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/support.html'>Supprot</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/gouv/minecraft-addons_join/index.html'>MCPE</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/blog'>Actualitées</a>
-        </li>
-        <li>
-          <a href='https://ebsayder-mg.github.io/contact'>A propos de nous ?</a>
-        </li>
+          
       </ul>
     </nav>
     <div class='icons'>
@@ -132,40 +109,6 @@ strong {
 
 
 <body>
-<details><summary><h6>Ancien systeme</h6></summary>
-
-
-<div id="dataDisplay"></div>
-</details>
-<script>
-// URL de la ressource JSON
-var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/id.json";
-
-// Éléments HTML où les données JSON seront affichées
-var dataDisplay = document.getElementById("dataDisplay");
-
-// Effectuer une requête pour récupérer les données JSON
-fetch(jsonUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Parcourir les données JSON et les afficher
-    for (var id in data) {
-      var person = data[id];
-      var personInfo = "<h2>ID: " + id + "</h2>";
-
-      for (var key in person) {
-        personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
-      }
-
-      dataDisplay.innerHTML += personInfo;
-    }
-  })
-  .catch(error => {
-    console.error("Une erreur s'est produite lors de la récupération des données : ", error);
-  });
-</script>
-
-</body>
 
 
 
@@ -189,8 +132,11 @@ fetch(jsonUrl)
 
 
 <body>
-  <div id="dataDisplay"></div>
 
+  <div id="dataDisplay"></div>
+  
+  
+  
   <script>
     var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/id.json";
     var dataDisplay = document.getElementById("dataDisplay");
@@ -278,5 +224,4 @@ fetch(jsonUrl)
 <body>
   <!-- Contenu de votre site ici -->
 </body>
-  </html>
-  
+</html>
