@@ -16,23 +16,6 @@
       "raison": "N/A",
       "by": "N/A"
     }
-  },
-  "mm01": {
-    "id": "mm01",
-    "amande": {
-      "date": "2023-08-15",
-      "raison": "Stationnement illégal",
-      "by": "Police"
-    },
-    "casier judiciaire": {
-      "date": "2023-08-15",
-      "raison": "Violence domestique",
-      "by": "Tribunal"
-    },
-    "contrat": {
-      "Date": "2023-08-15",
-      "raison": "Contrat de location",
-      "by": "Propriétaire"
-    }
   }
+
 }
