@@ -6,13 +6,26 @@
     "Prénom": "John",
     "Prenom ²": "N/A",
     "Date de naissance": "19/08/1980",
-    "Nationalité": "Française",
-    "Pays": "France",
-    "Profile": "dev",
+    "Nationalité": "Franco - Turque",
+    "Pays": "Fr - TR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AJ00.html",
     "signer": true,
     "By": "GFLP - LSP • SRDMG |• Metier : Président"
   },
-  "mm01": {
+  "mc01": {
+    "Nom": "Molderson",
+    "Nom ²": "-",
+    "Prénom": "Cengo",
+    "Prenom ²": "-",
+    "Date de naissance": "03/06/2002",
+    "Nationalité": "Française",
+    "Pays": "FR - TR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/MC01.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Chomeurs"
+  },
+
+    "id02": {
     "Nom": "hs",
     "Nom ²": "hs",
     "Prénom": "hs",
@@ -21,7 +34,152 @@
     "Nationalité": "hs",
     "Pays": "hs",
     "Profile": "hs",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier :..."
+    },
+
+    "al03": {
+    "Nom": "Auria",
+    "Nom ²": "-",
+    "Prénom": "Loriana",
+    "Prenom ²": "-",
+    "Date de naissance": "13/02/2004",
+    "Nationalité": "⛔ Compte suspendus",
+    "Pays": "hs",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AL01.html",
     "signer": false,
-    "By": "hs"
-  }
+    "By": "Auncune signature possible ⛔"
+    },
+
+    "fc04": {
+    "Nom": " Fort - de - Claire ",
+    "Nom ²": " - ",
+    "Prénom": " Claire - Antoine ",
+    "Prenom ²": " Joris ",
+    "Date de naissance": "  21/04/2009  ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/FC04.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Chef du ELT Center( électronique ) "
+    },
+
+
+    "AA05": {
+    "Nom": "  Asgarde ",
+    "Nom ²": " - ",
+    "Prénom": "  Aika ",
+    "Prenom ²": " - ",
+    "Date de naissance": "   18/08/2003 ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "ebsayder-mg.github.io/gouv/acces
+/membre-id/AA05.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Militaire en lieutenant colonel"
+    },
+  
+    "cc06": {
+    "Nom": "  Chic 4 ",
+    "Nom ²": " - ",
+    "Prénom": "  Chic  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  07.04.2009 ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/CC06.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Membre ELT center ( électrique ) "
+    },
+
+  
+    "as07": {
+    "Nom": "  Anderson ",
+    "Nom ²": " - ",
+    "Prénom": "  selim  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "   09/05/2015 ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/AS07.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Officier en police 1  "
+    },
+
+  
+    "cm08": {
+    "Nom": " Chicken  ",
+    "Nom ²": " - ",
+    "Prénom": "  Mike ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  08/09/2000  ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/CM08.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Maire de Incheon  "
+    },
+
+  
+    "pf09": {
+    "Nom": "  Palekino ",
+    "Nom ²": " - ",
+    "Prénom": " Francisco  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  20/02/2000  ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/PF09.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Chef de police   "
+    },
+
+  
+    "sn10": {
+    "Nom": " Smith  ",
+    "Nom ²": " - ",
+    "Prénom": " Nathan  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  👍  ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/SN10.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Maire MGI et Directeur de centrale n1 ☢️ "
+    },
+  
+    "sj11": {
+    "Nom": "  Jean ",
+    "Nom ²": " - ",
+    "Prénom": " Steven  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  15/10/1996  ",
+    "Nationalité": " FR",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces
+/membre-id/SJ11.html",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG |• Metier : Policier en officier 3  "
+    },
+
+
+  
+    "ex00": {
+    "Nom": "  GFLP ",
+    "Nom ²": "  Attention en dev  ",
+    "Prénom": "  v1.2.dev ",
+    "Prenom ²": " - ",
+    "Date de naissance": "    ",
+    "Nationalité": " ",
+    "Pays": "FR",
+    "Profile": "",
+    "signer": true,
+    "By": "GFLP - LSP • SRDMG    "
+    }
 }
