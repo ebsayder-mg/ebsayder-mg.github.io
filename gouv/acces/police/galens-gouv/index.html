@@ -146,10 +146,7 @@ strong {
       .then(data => {
         for (var id in data) {
           var person = data[id];
-var person = data[metier];
           var personInfo = "<h2>ID: " + id + "</h2>";
-          var personInfo = "<h2>👨‍💻 : " + id + "</h2>";
-
           for (var key in person) {
             personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
           }
