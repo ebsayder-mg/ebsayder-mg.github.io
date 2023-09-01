@@ -11,6 +11,8 @@
     "Pays": "Fr - TR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AJ00.html",
     "signer": true,
+    "verifier le ": " ../09/2022",
+    "modifier le : "../09/2022",
     "By": "GFLP - LSP • SRDMG | "
   },
   "mc01": {
@@ -24,6 +26,8 @@
     "Pays": "FR - TR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/MC01.html",
     "signer": true,
+        "verifier le ": " ../09/2022",
+    "modifier le : "01/09/2023",
     "By": "GFLP - LSP • SRDMG | "
   },
 
@@ -38,6 +42,8 @@
     "Pays": "hs",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/id02.html",
     "signer": true,
+          "verifier le ": "  ",
+    "modifier le : "   ",
     "By": "GFLP - LSP • SRDMG |• "
     },
 
@@ -52,6 +58,8 @@
     "Pays": "hs",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AL03.html",
     "signer": false,
+     "verifier le ": "  ",
+    "modifier le : ". ",
     "By": "Auncune signature possible ⛔"
     },
 
@@ -66,6 +74,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/FC04.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG |  "
     },
 
@@ -81,6 +91,8 @@
     "Pays": "FR",
     "Profile": "ebsayder-mg.github.io/gouv/acces/membre-id/AA05.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
   
@@ -95,6 +107,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CC06.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
 
@@ -110,6 +124,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AS07.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
 
@@ -125,6 +141,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CM08.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
 
@@ -140,6 +158,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/PF09.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
 
@@ -155,6 +175,8 @@
     "Pays": "FR",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/SN10.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
   
@@ -169,6 +191,8 @@
     "Pays": " Etat Unis ",
     "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/HA11.html",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG | "
     },
 
@@ -185,6 +209,8 @@
     "Pays": "FR",
     "Profile": "Developpement",
     "signer": true,
+     "verifier le ": " N/A ",
+    "modifier le : "  N/A ",
     "By": "GFLP - LSP • SRDMG    "
     }
 }
