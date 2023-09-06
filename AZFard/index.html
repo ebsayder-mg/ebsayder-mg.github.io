@@ -155,8 +155,8 @@ border-radius : 59px;
                 const resultDiv = document.getElementById("result");
                 const lawEntries = data.articles.map(article => `
                     <div class="law-entry">
-                        <div class="law-title">Article ${article.article} - Section ${article.section}</div>
-                        <div class="law-content">${article.content}</div>
+                        <div class="law-title"><h2> ${article.article} </h2><br><h5> ${article.section} </h5></div>
+                        <div class="law-content"><h3> ${article.content} </h3></div>
                     </div>
                 `).join('');
                 resultDiv.innerHTML = lawEntries;
