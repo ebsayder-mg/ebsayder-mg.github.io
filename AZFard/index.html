@@ -94,7 +94,7 @@
 </header>
 <main>
 
-<br><h1>AzFard Community <h6>Non approuvé par le propriétaire⚠️</h6></h1>
+<br><h1>AzFard Community <h6>Va.8Beta | Non approuvé par le propriétaire⚠️</h6></h1>
   <p><h3><a href="https://source-devmg.github.io/GFLP-LSP/discord.html">Visiter notres liste des staff ! </a></h3></p>
   <br>
  <hr class="gradient-hr">
@@ -142,7 +142,33 @@ border-radius : 59px;
 
 
 
+<body>
+    <center>
+    <h1> Defi de la survi  </h1>
+        <h6><a href="https://discord.gg/8v8H6ZvhBk">Proposée un defi ? </a></h6>
+    <div id="result"></div>
 
+    <script>
+        fetch('https://enesgp.github.io/api-json/Ebsayder/azf/defi.json')
+            .then(response => response.json())
+            .then(data => {
+                const resultDiv = document.getElementById("result");
+                const lawEntries = data.articles.map(article => `
+                    <div class="law-entry">
+                        <div class="law-title">Article ${article.article} - Section ${article.section}</div>
+                        <div class="law-content">${article.content}</div>
+                    </div>
+                `).join('');
+                resultDiv.innerHTML = lawEntries;
+            })
+            .catch(error => {
+                const resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = 'Erreur lors de la récupération du JSON.';
+                console.error('Erreur lors de la récupération du JSON:', error);
+            });
+    </script>
+    </center>
+</body>
 
 
 
