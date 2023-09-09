@@ -177,7 +177,34 @@ fetch(jsonUrl)
 
 </body>
   
+<div id="dataDisplay3"></div>
 
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/autre-info.json";
+var targetId = "id02";
+var dataDisplay3 = document.getElementById("dataDisplay3");
+
+fetch(jsonUrl)
+.then(response => response.json())
+.then(data => {
+if (data.hasOwnProperty(targetId)) {
+var person = data[targetId];
+var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+for (var key in person) {
+personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
+}
+
+dataDisplay3.innerHTML = personInfo;
+} else {
+dataDisplay3.innerHTML = "<p>Aucune carte trouvée pour l'ID " + targetId + "</p>";
+}
+})
+.catch(error => {
+console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+});
+</script>
+ 
 </main>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="https://ebsayder-mg.github.io/gouv/acces/s-c/script.js"></script>
