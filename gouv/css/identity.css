@@ -10,8 +10,8 @@ body {
 /* Style pour l'affichage des données */
 #dataDisplay {
   background-color: #fff;
-  border-left-top-radius: 5px;
-   border-right-top-radius: 5px;
+  border-left-top-radius: 15px;
+   border-right-top-radius: 15px;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,8 +28,8 @@ body {
 
 #dataDisplay3 {
   background-color: #fff;
-  border-left-bottom-radius: 5px;
-   border-right-bottom-radius: 5px
+  border-left-bottom-radius: 15px;
+   border-right-bottom-radius: 15px;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
