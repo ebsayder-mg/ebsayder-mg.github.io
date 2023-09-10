@@ -251,5 +251,116 @@ border-radius : 59px;
 <script src="https://enesGP.github.io/js/gflp/here/here.js"> </script>
     
 </head>
+ 
+
+
+
+
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS directement intégré dans le HTML */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .popup {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            text-align: center;
+            font-family: 'Roboto', sans-serif; /* Utilisation de la police "Roboto" */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Style pour le contenu de la pop-up */
+        .popup-content {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: right; /* Aligner la description à droite */
+        }
+
+        h3 {
+            text-align: center; /* Centrer le titre */
+        }
+
+        h6 {
+            text-align: center; /* Centrer l'auteur */
+        }
+    </style>
+    <!-- Inclure la police "Roboto" depuis Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <div id="popup1" class="popup">
+        <span class="close-button" onclick="closePopup('popup1')">&times;</span>
+        <h3>Travaux généraux</h3>
+        <div class="popup-content">
+            <p>⚠️ | Certaines habitations sont en travaux majeurs, donc certaines ne seront pas habitables/achetables.</p>
+            <h6>By : Administration GFLP - LSP - SRDMG / GFLP Ebsayder </h6>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <span class="close-button" onclick="closePopup('popup2')">&times;</span>
+        <h3>Administration MGI / GFLP LSP SRDMG [ LS-GFLP SEC ]</h3>
+        <div class="popup-content">
+            <p>⚠️ | Une ville a été maintenue en raison d'inactivité, avec un maire qui n'est pas sur le serveur Discord ! (1/2).</p>
+            <h6>By : Administration GFLP - LSP - SRDMG / LS-GFLP Security</h6>
+        </div>
+    </div>
+    
+    <!-- Placer le code JavaScript généré ici -->
+    <script>
+        // Fonction pour afficher la pop-up
+        function showPopup(popupId) {
+            const popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+        }
+
+        // Fonction pour fermer la pop-up et stocker l'information dans un cookie
+        function closePopup(popupId) {
+            const popup = document.getElementById(popupId);
+            popup.style.display = 'none';
+            document.cookie = popupId + '=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+        }
+
+        // Vérifier si la pop-up a déjà été montrée
+        function checkPopup(popupId) {
+            return document.cookie.indexOf(popupId + '=') === -1;
+        }
+
+        window.onload = function() {
+            if (checkPopup('popup1')) {
+                showPopup('popup1');
+            }
+
+            if (checkPopup('popup2')) {
+                showPopup('popup2');
+            }
+        };
+    </script>
+</body>
 </html>
 
