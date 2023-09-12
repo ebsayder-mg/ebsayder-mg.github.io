@@ -2,199 +2,148 @@
 
 {
   "aj00": {
-    "Nom": "Anderson",
-    "Nom ²": " N/A",
-    "Prénom": "John",
-    "Prenom ²": "N/A",
-    "Date de naissance": "19/08/1980",
-    "Nationalité": "Franco - Turque",
-    "metiers": " President , Directeur de ' ELT Center -G - Fibre - Informatique . '",
-    "Pays": "Fr - TR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AJ00.html",
+    "Permis ": " --- Port ---  ",
+    "Arme": "  Oui ( tout genre / zone )   ",
+    "Construire": "  Oui ( tout genre / zone )  ",
+    "Conduire": " Oui ( tout type ) ",
     "signer": true,
-    "verifier le " : " ../09/2022",
-    "modifier le " : " ../09/2022",
-    "By": "GFLP - LSP • SRDMG | "
+     "verifier le " : "  12.09.2023  ",
+    "modifier le " : "  12.09.2023  "
+    
+      
   },
   "mc01": {
-    "Nom": "Molderson",
-    "Nom ²": "-",
-    "Prénom": "Cengo",
-    "Prenom ²": "-",
-    "Date de naissance": "03/06/2000",
-    "Nationalité": "FR - TR",
-    "metiers": " Assistant gouvernement ",
-    "Pays": "FR - TR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/MC01.html",
+        "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " ../09/2022",
-    "modifier le " : "01/09/2023",
-    "By": "GFLP - LSP • SRDMG | "
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+     
   },
 
     "id02": {
-    "Nom": "hs",
-    "Nom ²": "hs",
-    "Prénom": "hs",
-    "Prenom ²": "hs",
-    "Date de naissance": "hs",
-    "Nationalité": "hs",
-    "metiers": " hs ",
-    "Pays": "hs",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/id02.html",
+       "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG |• "
-    },
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+     },
 
     "al03": {
-    "Nom": "Auria",
-    "Nom ²": "-",
-    "Prénom": "Loriana",
-    "Prenom ²": "-",
-    "Date de naissance": "13/02/2004",
-    "Nationalité": "⛔ Compte suspendus",
-    "metiers": " Assistante du gouvernements .  ",
-    "Pays": "hs",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AL03.html",
-    "signer": false,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "Auncune signature possible ⛔"
-    },
+        "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
+    "signer": true,
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+     },
 
     "fc04": {
-    "Nom": " Fort - de - Claire ",
-    "Nom ²": " - ",
-    "Prénom": " Claire - Antoine ",
-    "Prenom ²": " Joris ",
-    "Date de naissance": "  21/04/2009  ",
-    "Nationalité": " FR",
-    "metiers": " Chef du ELT Center( électronique ) ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/FC04.html",
+    "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG |  "
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+    
     },
 
 
     "aa05": {
-    "Nom": "  Asgarde ",
-    "Nom ²": " - ",
-    "Prénom": "  Aika ",
-    "Prenom ²": " - ",
-    "Date de naissance": "   18/08/2003 ",
-    "Nationalité": " FR",
-    "metiers": "  Militaire en lieutenant colonel ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AA05.html",
+    "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+      
     },
   
     "cc06": {
-    "Nom": "  Chic 4 ",
-    "Nom ²": " - ",
-    "Prénom": "  Chic  ",
-    "Prenom ²": " - ",
-    "Date de naissance": "  07.04.2009 ",
-    "Nationalité": " FR",
-    "metiers": "  Membre ELT center ( électrique )  ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CC06.html",
+      "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
+    
     },
 
   
     "as07": {
-    "Nom": "  Anderson ",
-    "Nom ²": " - ",
-    "Prénom": "  selim  ",
-    "Prenom ²": " - ",
-    "Date de naissance": "   02/09/2005 ",
-    "Nationalité": " FR",
-    "metiers": "  Police en Officier 1  ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AS07.html",
+     "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+      "verifier le " : "   ",
+    "modifier le " : "   "
+    
+    
     },
 
   
     "cm08": {
-    "Nom": " Chicken  ",
-    "Nom ²": " - ",
-    "Prénom": "  Mike ",
-    "Prenom ²": " - ",
-    "Date de naissance": "  08/09/2000  ",
-    "Nationalité": " FR",
-    "metiers": " Maire de Incheon  ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CM08.html",
+    "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+     "verifier le " : "   ",
+    "modifier le " : "   "
+    
+     
     },
 
   
     "pf09": {
-    "Nom": "  Palekino ",
-    "Nom ²": " - ",
-    "Prénom": " Francisco  ",
-    "Prenom ²": " - ",
-    "Date de naissance": "  20/02/2000  ",
-    "Nationalité": " FR",
-    "metiers": " Chef de police ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/PF09.html",
+         "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+      "verifier le " : "   ",
+    "modifier le " : "   "
+    
+   
     },
 
   
     "sn10": {
-    "Nom": " Smith  ",
-    "Nom ²": " - ",
-    "Prénom": " Nathan  ",
-    "Prenom ²": " - ",
-    "Date de naissance": "  👍  ",
-    "Nationalité": " FR",
-    "metiers": "  Maire MGI et Directeur de centrale n1 ☢️ ",
-    "Pays": "FR",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/SN10.html",
+      "Permis ": " --- Port ---  ",
+    "Arme": "Oui ( touts type ) publique / privee ",
+    "Construire": "  oui ( maison seulement )  ",
+    "Conduire": " Oui ( tout type ) ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+     "verifier le " : "   ",
+    "modifier le " : "   "
+    
+    
     },
   
     "ha11": {
-    "Nom": "  Hernandez ",
-    "Nom ²": " - ",
-    "Prénom": " Axel  ",
-    "Prenom ²": " - ",
-    "Date de naissance": "  15/10/1996  ",
-    "Nationalité": " US ",
-    "metiers": " Policier en officier 3 ",
-    "Pays": " Etat Unis ",
-    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/HA11.html",
+      "Permis ": " --- Port ---  ",
+    "Arme": " N/A",
+    "Construire": "  N/A  ",
+    "Conduire": " N/A ",
     "signer": true,
-    "verifier le " : " N/A ",
-    "modifier le " : "  N/A ",
-    "By": "GFLP - LSP • SRDMG | "
+    "verifier le " : "   ",
+    "modifier le " : "   "
+    
     },
 
 
