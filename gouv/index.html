@@ -142,7 +142,97 @@ border-radius : 59px;
      <br>MGI Gouvernement.
      <br><br>
      Vous y verrez toutes les annonces majeures de notre ville.
-     <br><br>
+     <br><br><br>
+   <hr>
+   <center> <p> Se connecter/ identier </p></center>
+
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body><center>
+    <button class="gov-op" onclick="openPopup()">Connexion • Membre / Gouv</button>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>GFLP - LSP • SRDMG |• Auth v3.8</h2>
+            
+            
+            <form id="auth-form" method="post">
+                <br><label for="pseudo">Pseudo :</label>
+                <br><input type="text" id="pseudo" name="pseudo" required>
+                <br><label for="mdp">Mot de passe :</label>
+               <br> <input type="password" id="mdp" name="mdp" required>
+               <br> <input type="button" value="Se connecter" onclick="submitForm()">
+            </form>
+            </center>
+            
+        </div>
+    </div>
+    
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function submitForm() {
+            var pseudo = document.getElementById("pseudo").value;
+            var mdp = document.getElementById("mdp").value;
+            var url = "https://ebsayder-mg.github.io/gouv/acces/membre-id/" + pseudo  + mdp + ".html";
+            document.getElementById("auth-form").action = url;
+            document.getElementById("auth-form").submit();
+        }
+    </script>
+</body>
+
+<style>
+   
+   .gov-op {
+      
+      color : white ;
+      background : #292929 ; 
+      width : 80%;
+      height : 70px;
+      border-radius: 10px;
+   }
+</style>
+
+   
+   <br><br><br><br><br>
      <a class="join-gouv" href="https://ebsayder-mg.github.io/gouv/acces/search/id-police.html">Gouvernement connect </a>
 <br><br>
      <a class="join-gouv" href="https://ebsayder-mg.github.io/gouv/acces/search/id-membre.html"> Citoyens connect </a>
