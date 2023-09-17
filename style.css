@@ -311,3 +311,25 @@ header {
     color: white;
   }
 }
+
+
+hr {
+  /* Définir la couleur de la ligne */
+  background-color: #333; /* Vous pouvez changer cette couleur selon vos préférences */
+  
+  /* Définir la hauteur de la ligne */
+  height: 2px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  
+  /* Ajouter un espace autour de la ligne pour la séparation */
+  margin: 20px 0; /* Vous pouvez ajuster la marge selon vos préférences */
+  
+  /* Ajouter une ombre pour donner du relief */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Vous pouvez ajuster l'ombre selon vos préférences */
+  
+  /* Définir la largeur de la ligne */
+  width: 50%; /* Vous pouvez ajuster la largeur selon vos besoins */
+  
+  /* Centrer la ligne horizontalement */
+  margin-left: auto;
+  margin-right: auto;
+}
