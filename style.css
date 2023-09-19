@@ -385,7 +385,8 @@ border-radius : 59px;
 
   hr {
   /* Définir la couleur de la ligne */
-  background-color: #333; /* Vous pouvez changer cette couleur selon vos préférences */
+  background-image: linear-gradient(to right, blue, red);
+    border : none;
   
   /* Définir la hauteur de la ligne */
   height: 2px; /* Vous pouvez ajuster la hauteur selon vos besoins */
