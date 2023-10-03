@@ -1,1 +1,89 @@
 
+
+{
+"aj00": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AJ00.html",
+"signer": true,
+"-": "%"
+},
+"mc01": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/MC01.html",
+"signer": true,
+"-": "%"
+},
+
+"id02": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/id02.html",
+"signer": true,
+"-": "%"
+},
+
+"al03": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AL03.html",
+"signer": false,
+"-": "%"
+},
+
+"fc04": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/FC04.html",
+"signer": true,
+"-": "%"
+},
+
+
+"aa05": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AA05.html",
+"signer": troue,
+"-": "%"
+},
+"cc06": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CC06.html",
+"signer": true,
+"-": "%"
+},
+
+"as07": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AS07.html",
+"signer": true,
+"-": "%"
+},
+
+"cm08": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CM08.html",
+"signer": true,
+"-": "%"
+},
+
+"pf09": {
+
+
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/PF09.html",
+"signer": true,
+"-": "%"
+},
+
+"sn10": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/SN10.html",
+"signer": true,
+"-": "%"
+},
+"ha11": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/HA11.html",
+"signer": true,
+"-": "%"
+},
+
+
+
+
+"gr12": {
+"Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/GR12.html",
+"signer": true,
+"-": "%"
+},
+
+
+"ex00": {
+"By": "GFLP - LSP • SRDMG "
+}
+}
