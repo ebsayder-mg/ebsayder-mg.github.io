@@ -1,6 +1,15 @@
 {
-    "AJ00": {
+    "JohnAnderson@gflp.com": {
         "username": "JohnAnderson@gflp.com",
         "password": "enesGP"
+    },
+     "SmithNathan@gmail.com": {
+        "username": "SmithNathan@gmail.com",
+        "password": "012345678910"
     }
+    "Utilisateur3": {
+        "username": "NomUtilisateur3",
+        "password": "MotDePasse3"
+    },
+    // Ajoutez d'autres comptes au besoin
 }
