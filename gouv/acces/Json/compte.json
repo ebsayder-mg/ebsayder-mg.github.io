@@ -1,6 +1,13 @@
 {
-    "aj00": {
-        "username": "votre_pseudo",
-        "password": "votre_mot_de_passe"
+    "AJ00": {
+        "username": "JohnAnderson@gflp.com",
+        "password": "enesGP"
     }
+
+    "SN10": {
+        "username": "SmithNathan@gmail.com",
+        "password": "012345678910"
+    }
+
+
 }
