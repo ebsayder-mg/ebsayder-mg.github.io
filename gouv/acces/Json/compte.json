@@ -1,10 +1,14 @@
 {
-    "AJ00": {
-        "username": "JohnAnderson@gflp.com",
+   
+   
+  "AJ00": {
+        "username": "John",
+        "email" : "JohnAnderson@gflp.com"
         "password": "enesGP"
     },
    "SN10": {
-        "username": "SmithNathan@gmail.com",
+   "username" :"nathan"
+        "mail": "SmithNathan@gmail.com",
         "password": "012345678910"
     },
     "Email": {
