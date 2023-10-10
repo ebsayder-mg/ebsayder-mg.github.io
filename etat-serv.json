@@ -2,19 +2,19 @@
   "ID1": {
     "date": "10-10-2023",
     "heure": "21:30",
-    "Etat": " MAINTENANCE"
+    "Etat": {
       "description": "BETA 0021",
       "Par": "EnesGP",
-      "Autres": "/-/"
-    
+      "Autres": "/-/"d
+    }
   },
    "ID1": {
     "date": "09-10-2023",
     "heure": "21:30",
-    "Etat": " MAINTENANCE"
+     "Etat": {
       "description": "BETA 0021",
       "Par": "EnesGP",
       "Autres": "/-/"
-    
+    }
   }
 }
