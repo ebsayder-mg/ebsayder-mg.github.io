@@ -1,186 +1,148 @@
-* { box-sizing:border-box }
-*:before, *:after { box-sizing:inherit }
+:root {
+   --primColor: #eaeef6;
 
-/* Basic styles */
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  font-family: @font-family-base;
+  --secoColor: #eaeeg9;
+  --cornerRad: 4px;
 }
-
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #f7f7f7;
+  background-color: var(--primColor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
-
-a { text-decoration: none }
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+details {
+  margin: 40px;
 }
-
-main {
-    margin-top: 10rem;
-    text-align: center;
-}
-/* Header styles */
-header {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #fff;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    height: 7rem;
-    padding: 0 15px;
-    position: fixed;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    top: 0;
-    width: 100%
-}
-
-.site-logo {
-    transition: color 200ms cubic-bezier(.55, 0, .1, 1);
-    color: #30acff;
-    font-size: 3rem;
-}
-
-.ok-header__logo:hover {color: #546edb}
-
-/* okayNav styles */
-body.okayNav-loaded {
-  overflow-x: hidden;
-}
-.okayNav:not(.loaded) {
-  visibility: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.okayNav ul {
-  /* We want two navigations - one hidden and one visible */
-  float: left;
-}
-.okayNav a {
-  /* Links general styling */
-  color: #2e2e33;
-  font-size: 1.4rem;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-}
-.okayNav__nav--visible {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.okayNav__nav--visible li {
-  display: inline-block;
-}
-.okayNav__nav--visible a {
-  /* Link styling for the visible part of the nav */
-  display: block;
-  transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1);
-  padding: 15px 15px;
-}
-.okayNav__nav--visible a:hover {
-  color: #546edb;
-}
-/* Link styling for the off-screen part of the nav */
-.okayNav__nav--invisible {
-  position: fixed;
-  top: 70px;
-  bottom: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  background: #fff;
-}
-.okayNav__nav--invisible a {
-  background: #fff;
-  width: 240px;
-  display: block;
-  padding: 15px;
-}
-.okayNav__nav--invisible.nav-left {
-  left: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.okayNav__nav--invisible.nav-right {
-  right: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-.okayNav__nav--invisible.transition-enabled {
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-}
-.okayNav__nav--invisible.nav-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-/* Kebab icon */
-.okayNav__menu-toggle {
-  position: relative;
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+summary {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
   cursor: pointer;
-  width: 40px;
-  height: 20px;
-  float: left;
-  z-index: 1;
-  top: 15px;
-}
-.okayNav__menu-toggle.okay-invisible {
-  position: absolute;
-  opacity: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  pointer-events: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
 }
-.okayNav__menu-toggle span {
-  display: block;
-  position: absolute;
-  margin: auto;
-  height: 4px;
-  width: 4px;
-  background: #2e2e33;
-  border-radius: 50%;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-}
-.okayNav__menu-toggle span:nth-child(1) {
+summary::before,
+summary::after {
+  position: static;
   top: 0;
+  left: 0;
 }
-.okayNav__menu-toggle span:nth-child(2) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+summary::before {
+  content: "";
 }
-.okayNav__menu-toggle span:nth-child(3) {
-  bottom: 0;
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
 }
-.okayNav__menu-toggle.icon--active {
-  /* Kebab icon when off-screen nav is open */
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+summary:hover {
+  transform: scale(1.1);
 }
-.okayNav__menu-toggle.icon--active span {
-  background: #546edb;
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  -webkit-animation-name: menuAnim;
+          animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  background-color: var(--primColor);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  -webkit-animation: closeMenu 300ms ease-in-out forwards;
+          animation: closeMenu 300ms ease-in-out forwards;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  content: "←Menu";
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  -webkit-animation: fadeMe 300ms linear forwards;
+          animation: fadeMe 300ms linear forwards;
+}
+@-webkit-keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@-webkit-keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+
+
+
+
+
 }
