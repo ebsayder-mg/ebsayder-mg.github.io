@@ -1,0 +1,241 @@
+
+{
+  "aj00": {
+    "Nom": "Anderson",
+    "Nom ²": " N/A",
+    "Prénom": "John",
+    "Prenom ²": "N/A",
+    "Date de naissance": "19/08/1980",
+    "Nationalité": "Franco - Turque",
+    "metiers": " Président EbsayderFlyse ",
+    "metiers": " Président ELT Center / G ",
+    "metiers": " Directeur |Gerant de construction ",
+    "metiers": " Gere l'emplacement des travaux , construction et l'activitée en termes de travaux ",
+    "Pays": "Fr - TR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AJ00.html",
+    "signer": true,
+    "verifier le " : " ../09/2022",
+    "modifier le " : " ../09/2022",
+    "By": "GFLP - LSP • SRDMG | "
+  },
+  "mc01": {
+    "Nom": "Molderson",
+    "Nom ²": "-",
+    "Prénom": "Cengo",
+    "Prenom ²": "-",
+    "Date de naissance": "03/06/2000",
+    "Nationalité": "FR - TR",
+    "metiers": " Employer du gouvernement , Identiter GEr ",
+    "Pays": "FR - TR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/MC01.html",
+    "signer": true,
+    "verifier le " : " ../09/2022",
+    "modifier le " : "01/09/2023",
+    "By": "GFLP - LSP • SRDMG | "
+  },
+
+    "id02": {
+    "Nom": "hs",
+    "Nom ²": "hs",
+    "Prénom": "hs",
+    "Prenom ²": "hs",
+    "Date de naissance": "hs",
+    "Nationalité": "hs",
+    "metiers": " hs ",
+    "Pays": "hs",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/id02.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG |• "
+    },
+
+    "al03": {
+    "Nom": "Auria",
+    "Nom ²": "-",
+    "Prénom": "Loriana",
+    "Prenom ²": "-",
+    "Date de naissance": "13/02/2004",
+    "Nationalité": "FR - FR",
+    "metiers": " chomeuses ",
+    "Pays": "hs",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AL03.html",
+    "signer": false,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": " no GFLP - LSP - SRDMG ( < ADM > 2023.2 ) "
+    },
+
+    "fc04": {
+    "Nom": " Fort - de - Claire ",
+    "Nom ²": " - ",
+    "Prénom": " Claire - Antoine ",
+    "Prenom ²": " Joris ",
+    "Date de naissance": "  21/04/2009  ",
+    "Nationalité": " FR",
+    "metiers": " Gerant du ELT Center / G  ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/FC04.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG |  "
+    },
+
+
+    "aa05": {
+    "Nom": "  Asgarde ",
+    "Nom ²": " - ",
+    "Prénom": "  Aika ",
+    "Prenom ²": " - ",
+    "Date de naissance": "   18/08/2003 ",
+    "Nationalité": " FR",
+    "metiers": "   Militaire // Lieutenant Colonel  ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AA05.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+  
+    "cc06": {
+    "Nom": "  Chic 4 ",
+    "Nom ²": " - ",
+    "Prénom": "  Chic  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  07.04.2009 ",
+    "Nationalité": " FR",
+    "metiers": "  Membre ELT center  ( électrique )  ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CC06.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+  
+    "as07": {
+    "Nom": "  Anderson ",
+    "Nom ²": " - ",
+    "Prénom": "  selim  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "   02/09/2005 ",
+    "Nationalité": " FR",
+    "metiers": "  Police //  Officier 1  ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/AS07.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+  
+    "cm08": {
+    "Nom": " Chicken  ",
+    "Nom ²": " - ",
+    "Prénom": "  Mike ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  08/09/2000  ",
+    "Nationalité": " FR",
+    "metiers": " Maire de Incheon   ",
+    "metiers": " Membre du gouvernement   ",
+    "metiers": "  geres emplacement , construction et l'activitée en termes de traveaux ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/CM08.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+  
+    "pf09": {
+    "Nom": "  Palekino ",
+    "Nom ²": " - ",
+    "Prénom": " Francisco  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  20/02/2000  ",
+    "Nationalité": " FR",
+    "metiers": " Chef de police ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/PF09.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+  
+    "sn10": {
+    "Nom": " Smith  ",
+    "Nom ²": " - ",
+    "Prénom": " Nathan  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  19/08/1998  ",
+    "Nationalité": " FR",
+    "metiers": "  Maire MGI et Directeur de centrale n1 ☢️ ",
+    "Pays": "FR",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/SN10.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+  
+    "ha11": {
+    "Nom": "  Hernandez ",
+    "Nom ²": " - ",
+    "Prénom": " Axel  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  15/10/1996  ",
+    "Nationalité": " US ",
+    "metiers": " Policier en officier 3 ",
+    "Pays": " Etat Unis ",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/HA11.html",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+
+
+
+      "gr12": {
+    "Nom": "  Grims ",
+    "Nom ²": " - ",
+    "Prénom": " Rick  ",
+    "Prenom ²": " - ",
+    "Date de naissance": "  07/10/2003  ",
+    "Nationalité": " FR ",
+    "metiers": " Secretaire ( Smith Industries ",
+    "Pays": " France",
+    "Profile": "https://ebsayder-mg.github.io/gouv/acces/membre-id/GR12.html",
+    "signer": true,
+    "verifier le " : " 23.09.2023 ",
+    "modifier le " : "  23.09.2023 ",
+    "By": "GFLP - LSP • SRDMG | "
+    },
+
+  
+
+  
+    "ex00": {
+    "Nom": "  GFLP ",
+    "Nom ²": "  Attention en dev  ",
+    "Prénom": "  v1.2.dev ",
+    "Prenom ²": " - ",
+    "Date de naissance": "    ",
+    "Nationalité": " ",
+    "metiers": "  ",
+    "Pays": "FR",
+    "Profile": "Developpement",
+    "signer": true,
+    "verifier le " : " N/A ",
+    "modifier le " : "  N/A ",
+    "By": "GFLP - LSP • SRDMG    "
+    }
+}
