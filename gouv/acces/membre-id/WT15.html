@@ -1,0 +1,229 @@
+ 
+
+
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>GFLP - LSP | Ebsayder , identity</title>
+  <link rel="stylesheet" href="https://ebsayder-mg.github.io/gouv/css/identity.css"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,700'><link rel="stylesheet" href="https://ebsayder-mg.github.io/gouv/acces/s-c/style.css">
+<link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class='container'>
+    <div class='mobile_nav'>
+      <button class='burger' title='Open and close menu'>
+        <span class='mobile_nav__label'>Menu</span>
+        <div class='top stripe'></div>
+        <div class='middle stripe'></div>
+        <div class='bottom stripe'></div>
+      </button>
+    </div>
+    <div class='mobile_menu'>
+      <nav>
+        <ul>
+          <li class='visited'>
+            <a href='https://ebsayder-mg.github.io/'>Home</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <div class='logo'>
+      <span>GFLP  |Ebsayder</span>
+    </div>
+    <nav class='head_nav'>
+      <ul>
+        <li class='visited'>
+          <a href='https://ebsayder-mg.github.io/'>Home</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div class='icons'>
+      <div class='block'>
+        
+      </div>
+      
+    </div>
+  </div>
+</header>
+<main>
+
+
+</body>
+</p></strong></h2>
+
+     
+
+
+
+
+<body>
+
+<div id="dataDisplay"></div>
+
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/id.json";
+var targetId = "wt15";
+var dataDisplay = document.getElementById("dataDisplay");
+
+fetch(jsonUrl)
+  .then(response => response.json())
+  .then(data => {
+    if (data.hasOwnProperty(targetId)) {
+      var person = data[targetId];
+      var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+      for (var key in person) {
+        personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
+      }
+
+      dataDisplay.innerHTML = personInfo;
+    } else {
+      dataDisplay.innerHTML = "<p>Aucune carte trouvée pour l'ID " + targetId + "</p>";
+    }
+  })
+  .catch(error => {
+    console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dataDisplay2"></div>
+
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/info.json";
+var targetId = "wt15";
+var dataDisplay = document.getElementById("dataDisplay");
+var dataDisplay2 = document.getElementById("dataDisplay2");
+
+fetch(jsonUrl)
+  .then(response => response.json())
+  .then(data => {
+    if (data.hasOwnProperty(targetId)) {
+      var person = data[targetId];
+      var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+      for (var key in person) {
+        personInfo += "<p><strong>" + key + ":</strong> " + person[key].date + "</p>";
+        personInfo += "<p><strong>Raison:</strong> " + person[key].raison + "</p>";
+        personInfo += "<p><strong>By:</strong> " + person[key].by + "</p>";
+      }
+
+      dataDisplay2.innerHTML = personInfo;
+    } else {
+      dataDisplay2.innerHTML = "<p>Aucune information trouvée pour l'ID " + targetId + "</p>";
+    }
+  })
+  .catch(error => {
+    console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+  });
+</script>
+
+  </body>
+
+
+
+
+
+ <div id="dataDisplay3"></div>
+
+<script>
+var jsonUrl = "https://ebsayder-mg.github.io/gouv/acces/Json/autre-info.json";
+var targetId = "wt15";
+var dataDisplay3 = document.getElementById("dataDisplay3");
+
+fetch(jsonUrl)
+.then(response => response.json())
+.then(data => {
+if (data.hasOwnProperty(targetId)) {
+var person = data[targetId];
+var personInfo = "<h2>ID: " + targetId + "</h2>";
+
+for (var key in person) {
+personInfo += "<p><strong>" + key + ":</strong> " + person[key] + "</p>";
+}
+
+dataDisplay3.innerHTML = personInfo;
+} else {
+dataDisplay3.innerHTML = "<p>Aucune carte trouvée pour l'ID " + targetId + "</p>";
+}
+})
+.catch(error => {
+console.error("Une erreur s'est produite lors de la récupération des données : ", error);
+});
+</script>
+ 
+
+
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="https://ebsayder-mg.github.io/gouv/acces/s-c/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="EnesGP">
+  <meta name="description" content="Site officiel de GFLP | ebsayder dans id">
+  <meta name="keywords" content="GFLP, ebsayder, SRDMG">
+  <meta property="og:title" content="GFLP - SRDMG ebsayder">
+  <meta property="og:description" content="Site officiel de GFLP | ebsayder id ">
+  <meta property="og:image" content="https://ebsayder-mg.github.io/favicon.ico">
+  <meta property="og:url" content="https://ebsayder-mg.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GFLP - SRDMG">
+  <meta name="twitter:description" content="Site officiel de GFLP | ebsayder">
+  <meta name="twitter:image" content="https://ebsayder-mg.github.io/favicon.ico">
+  <link rel="icon" href="https://ebsayder-mg.github.io/favicon.ico">
+  <title>GFLP - SRDMG</title>
+</head>
+<body>
+  <!-- Contenu de votre site ici -->
+</body>
+</html>
+
+
+  
+<html>
+<head>
+
+<script src="https://enesgp.github.io/js/gflp/e/page.js"> </script>
+<script src="https://enesgp.github.io/js/gflp/e/opti.js"> </script>
+<script src="https://enesgp.github.io/js/gflp/e/1.js"> </script>
+<script src="https://enesgp.github.io/js/gflp/e/identity.js"> </script>
+<script src="https://enesGP.github.io/js/gflp/here/here.js"> </script>
+    
+</head>
+</html>
