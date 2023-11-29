@@ -135,7 +135,7 @@
 </head>
 <body>
 <header>
-<a href="hhttps://pikayutmg.github.io/pikayut/discord/serv/gflp-off/conditions.html">nouveau reglement mdr
+<a href="https://pikayutmg.github.io/pikayut/discord/serv/gflp-off/conditions.html">nouveau reglement mdr
 </a>    <!-- ... (Votre code d'en-tête ici) ... -->
 </header>
 <main>
@@ -151,8 +151,8 @@
             const resultDiv = document.getElementById("result");
             const reglementEntries = data.articles.map(article => `
                 <div class="reglement-entry">
-                    <div class="reglement-title">Article ${article.article} - Section ${article.section}</div>
-                    <div class="reglement-content">${article.content}</div>
+                    <div class="reglement-title"><a href="https://pikayutmg.github.io/pikayut/discord/serv/gflp-off/conditions.html">nouveau reglement mdrArticle ${article.article} - Section ${article.section}</div>
+                    <div class="reglement-content"><a href="https://pikayutmg.github.io/pikayut/discord/serv/gflp-off/conditions.html">nouveau reglement mdr${article.content}</div>
                 </div>
             `).join('');
             resultDiv.innerHTML = reglementEntries;
