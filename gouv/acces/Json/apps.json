@@ -3,21 +3,15 @@
     "name": "Gouvernement",
     "priviliege": "acces-gouv",
     "icon": "url_gouv_icon",
-    "exe": function() {
-      // Code à exécuter lorsque l'application Gouvernement est lancée
-      alert('Lancement de l\'application Gouvernement');
-    },
+    "exe": "openGouv",
     "version": "1.0.0"
   },
   "police": {
     "name": "Police",
     "priviliege": "acces-police",
     "icon": "url_police_icon",
-    "exe": function() {
-      // Code à exécuter lorsque l'application Police est lancée
-      alert('Lancement de l\'application Police');
-    },
+    "exe": "openPolice",
     "version": "1.0.0"
-  },
+  }
   // Ajoutez d'autres applications ici
 }
