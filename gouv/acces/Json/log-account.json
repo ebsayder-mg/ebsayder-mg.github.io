@@ -1,1 +1,15 @@
 
+{
+  "gouv": {
+    "password": "gouv",
+    "rights": ["acces-gouv", "acces-police", "acces-maire", "acces-here"]
+  },
+  "aj00": {
+    "password": "aj00",
+    "rights": ["acces-gouv", "acces-here"]
+  },
+  "autre_utilisateur": {
+    "password": "hash_sécurisé_autre",
+    "rights": ["acces-here"]
+  }
+}
