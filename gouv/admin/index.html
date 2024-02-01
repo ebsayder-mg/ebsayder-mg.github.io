@@ -199,7 +199,7 @@ BETA : <input type="checkbox" id="advancedCheckbox"><br>
 
             // Load JSON data from the provided URL
             try {
-                const response = await fetch('https://ebsayder-mg.github.io/gouv/admin/user.json');
+                const response = await fetch('https://ebsayderflyse.vercel.app/s-c/admin/json/connect/user.json');
                 const data = await response.json();
 
                 var foundUser = data.users.find(user => user.email === email && user.password === password);
@@ -221,29 +221,47 @@ BETA : <input type="checkbox" id="advancedCheckbox"><br>
     
     
     
- <!-- redirect -->
-    <script>
-        function redirectToAdminPage() {
-            const email = getCookie("Email");
-            const password = getCookie("Password");
+<!-- redirect -->
+<script>
+    function redirectToAdminPage() {
+        const email = getCookie("Email");
+        const password = getCookie("Password");
 
-            if (email && password) {
-                const redirectURL = `https://ebsayder-mg.github.io/gouv/admin/connecter?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
-                window.location.href = redirectURL;
-            } else {
-                alert("No email and password found in cookies.");
-            }
+        if (email && password) {
+            const apiUrl = "https://ebsayderflyse.vercel.app/s-c/admin/json/connect";
+            const connectUrl = `${apiUrl}/email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+            
+            // Vérifier dans l'URL spécifiée
+            fetch(connectUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Vérifier si la connexion a réussi
+                    if (data.success) {
+                        // Rediriger vers la page d'administration
+                        const redirectURL = `https://ebsayder-mg.github.io/gouv/admin/connecter?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+                        window.location.href = redirectURL;
+                    } else {
+                        alert("La connexion a échoué. Veuillez vérifier vos informations d'identification.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Erreur lors de la connexion :", error);
+                });
+        } else {
+            alert("Aucun e-mail et mot de passe trouvés dans les cookies.");
         }
+    }
 
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-        }
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
 
-        // Automatically redirect when the page loads (you may want to trigger this event based on user interaction)
-        window.onload = redirectToAdminPage;
-    </script>
+    // Redirection automatique lorsque la page se charge (vous voudrez peut-être déclencher cet événement en fonction de l'interaction de l'utilisateur)
+    window.onload = redirectToAdminPage;
+</script>
+
     
     
     
